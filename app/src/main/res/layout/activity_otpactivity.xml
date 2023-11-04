@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_bacround3"
+    tools:context=".OTPActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/agbalu"
+        android:text="Please enter \nthe SMS verification code sent to your phone"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/thisis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/agbalu"
+        android:text="Your phone number"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/thisphone"
+        app:layout_constraintStart_toStartOf="@+id/thisphone" />
+
+    <TextView
+        android:id="@+id/thisphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/mono_regular"
+        android:text="Your phone number"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/agbalu"
+        android:text="SMS verification code"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_get_started"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/edt_phone_number"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:fontFamily="@font/mono_regular"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:paddingStart="50dp"
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_timer"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/agbalu"
+                android:gravity="center"
+                android:text="60"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_get_started"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/bnt_get_started"
+        android:fontFamily="@font/agbalu"
+        android:text="@string/get_started"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
