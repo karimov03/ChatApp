@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/startFragment">
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.chatapp.Fragments.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/phoneNumberFragment"
+        android:name="com.example.chatapp.Fragments.PhoneNumberFragment"
+        android:label="fragment_phone_number"
+        tools:layout="@layout/fragment_phone_number" />
+    <fragment
+        android:id="@+id/OTPAFragment"
+        android:name="com.example.chatapp.Fragments.OTPAFragment"
+        android:label="fragment_o_t_p_a"
+        tools:layout="@layout/fragment_o_t_p_a" />
+</navigation>

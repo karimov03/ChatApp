@@ -10,20 +10,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-//        val sharedPreferences = getSharedPreferences("MyCache", Context.MODE_PRIVATE)
-//        val cachedValue = sharedPreferences.getString("key", "")
-//        if (cachedValue=="VerfiyingActivitiy"){
-//            val intent = Intent(this,VerfiyingActivitiy::class.java)
-//            startActivity(intent)
-//        }
-//        if (cachedValue=="OTPActivity"){
-//            val intent = Intent(this,OTPActivity::class.java)
-//            startActivity(intent)
-//        }
-        binding.btnGetStarted.setOnClickListener {
-            val intent = Intent(this,VerfiyingActivitiy::class.java)
-            startActivity(intent)
-        }
 
 
     }

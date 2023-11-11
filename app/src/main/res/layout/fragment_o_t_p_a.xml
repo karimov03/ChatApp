@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_bacround3"
-    tools:context=".OTPActivity">
+    tools:context=".Fragments.OTPAFragment">
+
 
     <TextView
         android:id="@+id/title"
@@ -110,4 +111,5 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
